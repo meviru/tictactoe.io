@@ -1,0 +1,43 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1d1e26;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: #2d2e35;
+    border: none;
+    font-size: 36px;
+    color: #ffd700;
+    /* Use #ffd700 for 'O' and #48cae4 for 'X' */
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.square:hover {
+    background-color: #444555;
+}
+
+.game-info {
+    margin-top: 20px;
+    font-size: 24px;
+}
